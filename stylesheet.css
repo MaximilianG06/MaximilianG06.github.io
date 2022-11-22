@@ -1,3 +1,5 @@
-*{
-    background-color: aqua;
+#bodyIndex{
+    background-image: url(./IMG/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
