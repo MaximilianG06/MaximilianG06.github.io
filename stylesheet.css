@@ -1,5 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 #bodyIndex{
     background-image: url(./IMG/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+#headLine{
+    background-color: white;
 }
