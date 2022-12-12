@@ -1,0 +1,526 @@
+/***generelle***/
+body {
+
+    background-image: url(../Bilder/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: top;
+    align-items: ce;
+}
+
+#menu {
+
+    background-color: #318432;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    height: 15vh;
+
+}
+
+#menu img {
+    height: 11vh;
+    width: auto;
+    margin: 0px;
+}
+
+.menuLinks {
+    color: #deb448;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 4vh;
+    padding: 5.26vh;
+    margin: 0px;
+}
+
+.menuLinks:hover {
+    background-color: #016529;
+    transition: 1s;
+    box-shadow: 0 0 10px 0px black;
+    border-radius: 2vh;
+}
+
+/****Geschichte***/
+#bothTexts {
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+}
+
+#Textdesign {
+    width: 30%;
+    height: fit-content;
+
+    border: black 0.3vh solid;
+    border-radius: 2vh;
+    padding: 1.5vh;
+    margin: 1.5vh;
+}
+
+
+#headline {
+    font-size: 2.5vh;
+}
+
+#text {
+    font-size: 1.7vh;
+}
+
+/***Bilder***/
+
+
+#allImg {
+    margin: 2vh;
+    padding: 3vh;
+    border: black 0.5vh solid;
+    
+}
+
+#allImg img {
+    height: auto;
+    width: 25%;
+    z-index: 1;
+    box-shadow: 1vh 1vh 1vh 0.1vh black;
+    transition: all 2s;
+    
+}
+
+#allImg img:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.rows {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#first {
+    margin-bottom: 3vh;
+}
+
+/***Video***/
+#backgroundVideo {
+    padding: 2vh;
+    align-items: center;
+    margin: 2vh;
+    padding: 4vh;
+    border: black 0.5vh solid;
+    width: 80vh;
+    margin-top: 13vh;
+}
+#boxInCenter{
+    display: flex;
+    justify-content: center;
+}
+
+#fourVideos video {
+    z-index: 1;
+    width: 70vh;
+    height: auto;
+    box-shadow: 1vh 1vh 1vh 0.1vh black;
+    margin-bottom: 2vh;
+}
+
+#fourVideos h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 4vh;
+    z-index: 1;
+
+}
+
+/**musste ich so machen damit die bubbles hinter dem bild verschwinden**/
+#row {
+    display: flex;
+    justify-content: center;
+}
+
+/***Audio***/
+#backgroundAudio {
+    padding: 2vh;
+    text-align: center;
+    margin: 2vh;
+    padding: 3vh;
+    margin-top: 20vh;
+    width: 80vh;
+    margin-left: 55vh;
+    border: black 0.5vh solid;
+}
+
+audio {
+    width: 50vh;
+    
+}
+
+#backgroundAudio h1 {
+    text-decoration: underline;
+    font-size: 5vh;
+}
+
+/**Css code den ich von Google Kopiert habe. Quelle: "https://codepen.io/Mark_Bowley/pen/PozwyP" **/
+.BoxBubbles {
+    background: rgb(255, 169, 16);
+    font: 100% Lato, Arial, Sans Serif;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#background-wrap {
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    position: relative;
+
+}
+
+
+/* KEYFRAMES */
+
+@keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes sideWays {
+    0% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 50px;
+    }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+
+    animation: animateBubble 18s linear infinite, sideWays 2s infinite alternate;
+    left: -5%;
+    top: 5%;
+    transform: scale(0.1);
+}
+
+.x2 {
+
+    animation: animateBubble 4s linear infinite, sideWays 4s infinite alternate;
+    left: 5%;
+    top: 80%;
+    transform: scale(0.1);
+}
+
+.x3 {
+
+    animation: animateBubble 7s linear infinite, sideWays 2s infinite alternate;
+    left: 10%;
+    top: 40%;
+    transform: scale(0.1);
+}
+
+.x4 {
+
+    animation: animateBubble 5s linear infinite, sideWays 3s infinite alternate;
+    left: 20%;
+    top: 0;
+    transform: scale(0.1);
+}
+
+.x5 {
+
+    animation: animateBubble 12s linear infinite, sideWays 4s infinite alternate;
+    left: 30%;
+    top: 50%;
+    transform: scale(0.1);
+}
+
+.x6 {
+    animation: animateBubble 9s linear infinite, sideWays 2s infinite alternate;
+    left: 50%;
+    top: 0;
+    transform: scale(0.1);
+}
+
+.x7 {
+
+    animation: animateBubble 4s linear infinite, sideWays 2s infinite alternate;
+    left: 65%;
+    top: 70%;
+    transform: scale(0.1);
+}
+
+.x8 {
+
+    animation: animateBubble 8s linear infinite, sideWays 3s infinite alternate;
+    left: 80%;
+    top: 10%;
+    transform: scale(0.1);
+}
+
+.x9 {
+    animation: animateBubble 4s linear infinite, sideWays 4s infinite alternate;
+    left: 90%;
+    top: 50%;
+    transform: scale(0.1);
+}
+
+.x10 {
+    animation: animateBubble 6s linear infinite, sideWays 2s infinite alternate;
+    left: 80%;
+    top: 80%;
+    transform: scale(0.1);
+}
+
+.x11 {
+
+    animation: animateBubble 7s linear infinite, sideWays 2s infinite alternate;
+    left: -5%;
+    top: 3%;
+    transform: scale(0.1);
+}
+
+.x12 {
+
+    animation: animateBubble 10s linear infinite, sideWays 4s infinite alternate;
+    left: 53%;
+    top: 8%;
+    transform: scale(0.1);
+}
+
+.x13 {
+
+    animation: animateBubble 13s linear infinite, sideWays 2s infinite alternate;
+    left: 19%;
+    top: 33%;
+    transform: scale(0.1);
+}
+
+.x14 {
+
+    animation: animateBubble 9s linear infinite, sideWays 3s infinite alternate;
+    left: 22%;
+    top: 3;
+    transform: scale(0.1);
+}
+
+.x15 {
+
+    animation: animateBubble 8s linear infinite, sideWays 4s infinite alternate;
+    left: 68%;
+    top: 54%;
+    transform: scale(0.1);
+}
+
+.x16 {
+    animation: animateBubble 3s linear infinite, sideWays 2s infinite alternate;
+    left: 88%;
+    top: 0;
+    transform: scale(0.1);
+}
+
+.x17 {
+
+    animation: animateBubble 2s linear infinite, sideWays 2s infinite alternate;
+    left: 65%;
+    top: 70%;
+    transform: scale(0.1);
+}
+
+.x18 {
+
+    animation: animateBubble 13s linear infinite, sideWays 3s infinite alternate;
+    left: 60%;
+    top: 5%;
+    transform: scale(0.1);
+}
+
+.x19 {
+    animation: animateBubble 11s linear infinite, sideWays 4s infinite alternate;
+    left: 95%;
+    top: 45%;
+    transform: scale(0.1);
+}
+
+.x20 {
+    animation: animateBubble 6s linear infinite, sideWays 2s infinite alternate;
+    left: 90%;
+    top: 30%;
+    transform: scale(0.1);
+}
+
+.x21 {
+
+    animation: animateBubble 15s linear infinite, sideWays 2s infinite alternate;
+    left: -3%;
+    top: 56%;
+    transform: scale(0.1);
+}
+
+.x22 {
+
+    animation: animateBubble 5s linear infinite, sideWays 4s infinite alternate;
+    left: 55%;
+    top: 89%;
+    transform: scale(0.1);
+}
+
+.x23 {
+
+    animation: animateBubble 3s linear infinite, sideWays 2s infinite alternate;
+    left: 11%;
+    top: 41%;
+    transform: scale(0.1);
+}
+
+.x24 {
+
+    animation: animateBubble 13s linear infinite, sideWays 3s infinite alternate;
+    left: 26%;
+    top: 0;
+    transform: scale(0.1);
+}
+
+.x25 {
+
+    animation: animateBubble 18s linear infinite, sideWays 4s infinite alternate;
+    left: 23%;
+    top: 36%;
+    transform: scale(0.1);
+}
+
+.x26 {
+    animation: animateBubble 16s linear infinite, sideWays 2s infinite alternate;
+    left: 34%;
+    top: 9;
+    transform: scale(0.1);
+}
+
+.x27 {
+
+    animation: animateBubble 11s linear infinite, sideWays 2s infinite alternate;
+    left: 62%;
+    top: 7%;
+    transform: scale(0.1);
+}
+
+.x28 {
+
+    animation: animateBubble 14s linear infinite, sideWays 3s infinite alternate;
+    left: 25%;
+    top: 1%;
+    transform: scale(0.1);
+}
+
+.x29 {
+    animation: animateBubble 12s linear infinite, sideWays 4s infinite alternate;
+    left: 67%;
+    top: 13%;
+    transform: scale(0.1);
+}
+
+.x30 {
+    animation: animateBubble 11s linear infinite, sideWays 2s infinite alternate;
+    left: 32%;
+    top: 66%;
+    transform: scale(0.1);
+}
+
+.x31 {
+
+    animation: animateBubble 8s linear infinite, sideWays 2s infinite alternate;
+    left: 56%;
+    top: 21%;
+    transform: scale(0.1);
+}
+
+.x32 {
+
+    animation: animateBubble 7s linear infinite, sideWays 4s infinite alternate;
+    left: -15%;
+    top: 50%;
+    transform: scale(0.1);
+}
+
+.x33 {
+
+    animation: animateBubble 13s linear infinite, sideWays 2s infinite alternate;
+    left: 9%;
+    top: 3%;
+    transform: scale(0.1);
+}
+
+.x34 {
+
+    animation: animateBubble 14s linear infinite, sideWays 3s infinite alternate;
+    left: 32%;
+    top: 31;
+    transform: scale(0.1);
+}
+
+.x35 {
+
+    animation: animateBubble 18s linear infinite, sideWays 4s infinite alternate;
+    left: -16%;
+    top: 4%;
+    transform: scale(0.1);
+}
+
+.x36 {
+    animation: animateBubble 16s linear infinite, sideWays 2s infinite alternate;
+    left: -18%;
+    top: 0;
+    transform: scale(0.1);
+}
+
+.x37 {
+
+    animation: animateBubble 6s linear infinite, sideWays 2s infinite alternate;
+    left: 0%;
+    top: 10%;
+    transform: scale(0.1);
+}
+
+.x38 {
+
+    animation: animateBubble 4s linear infinite, sideWays 3s infinite alternate;
+    left: -5%;
+    top: 15%;
+    transform: scale(0.1);
+}
+
+.x39 {
+    animation: animateBubble 6s linear infinite, sideWays 4s infinite alternate;
+    left: 65%;
+    top: 30%;
+    transform: scale(0.1);
+}
+
+.x40 {
+    animation: animateBubble 5s linear infinite, sideWays 2s infinite alternate;
+    left: 25%;
+    top: 25%;
+    transform: scale(0.1);
+}
+
+/* OBJECTS */
+
+.bubble {
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}

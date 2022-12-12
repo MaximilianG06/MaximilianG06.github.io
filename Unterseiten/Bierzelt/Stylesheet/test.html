@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale(0.1)=1.0">
+    <title>Document</title>
+    <style>
+        
+        body {
+	background: #00b4ff;
+	color: #333;
+	font: 100% Lato, Arial, Sans Serif;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+#background-wrap {
+    bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+
+/* KEYFRAMES */
+
+@keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes sideWays {
+    0% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 50px;
+    }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+
+    animation: animateBubble 8s linear infinite, sideWays 2s   infinite alternate;
+    left: -5%;
+    top: 5%;
+    transform: scale(0.1);
+}
+
+.x2 {
+
+    animation: animateBubble 4s linear infinite, sideWays 4s   infinite alternate;
+    left: 5%;
+    top: 80%;
+    transform: scale(0.1);
+}
+
+.x3 {
+
+    animation: animateBubble 7s linear infinite, sideWays 2s   infinite alternate;
+    left: 10%;
+    top: 40%;
+    transform: scale(0.1);
+}
+
+.x4 {
+
+    animation: animateBubble 5s linear infinite, sideWays 3s   infinite alternate;
+    left: 20%;
+    top: 0;
+    transform: scale(0.1);
+}
+
+.x5 {
+
+    animation: animateBubble 12s linear infinite, sideWays 4s   infinite alternate;
+    left: 30%;
+    top: 50%;
+    transform: scale(0.1);
+}
+
+.x6 {
+    animation: animateBubble 9s linear infinite, sideWays 2s   infinite alternate;
+    left: 50%;
+    top: 0;
+    transform: scale(0.1);
+}
+
+.x7 {
+
+    animation: animateBubble 4s linear infinite, sideWays 2s   infinite alternate;
+    left: 65%;
+    top: 70%;
+    transform: scale(0.1);
+}
+
+.x8 {
+
+    animation: animateBubble 8s linear infinite, sideWays 3s   infinite alternate;
+    left: 80%;
+    top: 10%;
+    transform: scale(0.1);
+}
+
+.x9 {
+    animation: animateBubble 4s linear infinite, sideWays 4s   infinite alternate;
+    left: 90%;
+    top: 50%;
+    transform: scale(0.1);
+}
+
+.x10 {
+    animation: animateBubble 6s linear infinite, sideWays 2s   infinite alternate;
+    left: 80%;
+    top: 80%;
+    transform: scale(0.1);
+}
+.x11 {
+
+animation: animateBubble 7s linear infinite, sideWays 2s   infinite alternate;
+left: -5%;
+top: 3%;
+transform: scale(0.1);
+}
+
+.x12 {
+
+animation: animateBubble 10s linear infinite, sideWays 4s   infinite alternate;
+left: 53%;
+top: 8%;
+transform: scale(0.1);
+}
+
+.x13 {
+
+animation: animateBubble 13s linear infinite, sideWays 2s   infinite alternate;
+left: 19%;
+top: 33%;
+transform: scale(0.1);
+}
+
+.x14 {
+
+animation: animateBubble 9s linear infinite, sideWays 3s   infinite alternate;
+left: 22%;
+top: 3;
+transform: scale(0.1);
+}
+
+.x15 {
+
+animation: animateBubble 8s linear infinite, sideWays 4s   infinite alternate;
+left: 68%;
+top: 54%;
+transform: scale(0.1);
+}
+
+.x16 {
+animation: animateBubble 2s linear infinite, sideWays 2s   infinite alternate;
+left: 88%;
+top: 0;
+transform: scale(0.1);
+}
+
+.x17 {
+
+animation: animateBubble 2s linear infinite, sideWays 2s   infinite alternate;
+left: 65%;
+top: 70%;
+transform: scale(0.1);
+}
+
+.x18 {
+
+animation: animateBubble 13s linear infinite, sideWays 3s   infinite alternate;
+left: 60%;
+top: 5%;
+transform: scale(0.1);
+}
+
+.x19 {
+animation: animateBubble 11s linear infinite, sideWays 4s   infinite alternate;
+left: 95%;
+top: 45%;
+transform: scale(0.1);
+}
+
+.x20 {
+animation: animateBubble 6s linear infinite, sideWays 2s   infinite alternate;
+left: 90%;
+top: 30%;
+transform: scale(0.1);
+}
+.x21 {
+
+animation: animateBubble 15s linear infinite, sideWays 2s   infinite alternate;
+left: -3%;
+top: 56%;
+transform: scale(0.1);
+}
+
+.x22 {
+
+animation: animateBubble 5s linear infinite, sideWays 4s   infinite alternate;
+left: 55%;
+top: 89%;
+transform: scale(0.1);
+}
+
+.x23 {
+
+animation: animateBubble 3s linear infinite, sideWays 2s   infinite alternate;
+left: 11%;
+top: 41%;
+transform: scale(0.1);
+}
+
+.x24 {
+
+animation: animateBubble 3s linear infinite, sideWays 3s   infinite alternate;
+left: 26%;
+top: 0;
+transform: scale(0.1);
+}
+
+.x25 {
+
+animation: animateBubble 18s linear infinite, sideWays 4s   infinite alternate;
+left: 23%;
+top: 36%;
+transform: scale(0.1);
+}
+
+.x26 {
+animation: animateBubble 16s linear infinite, sideWays 2s   infinite alternate;
+left: 34%;
+top: -9;
+transform: scale(0.1);
+}
+
+.x27 {
+
+animation: animateBubble 11s linear infinite, sideWays 2s   infinite alternate;
+left: 62%;
+top: 7%;
+transform: scale(0.1);
+}
+
+.x28 {
+
+animation: animateBubble 14s linear infinite, sideWays 3s   infinite alternate;
+left: 87%;
+top: 1%;
+transform: scale(0.1);
+}
+
+.x29 {
+animation: animateBubble 12s linear infinite, sideWays 4s   infinite alternate;
+left: 67%;
+top: 13%;
+transform: scale(0.1);
+}
+
+.x30 {
+animation: animateBubble 3s linear infinite, sideWays 2s   infinite alternate;
+left: 84%;
+top: 66%;
+transform: scale(0.1);
+}
+.x31 {
+
+animation: animateBubble 8s linear infinite, sideWays 2s   infinite alternate;
+left: 56%;
+top: 21%;
+transform: scale(0.1);
+}
+
+.x32 {
+
+animation: animateBubble 7s linear infinite, sideWays 4s   infinite alternate;
+left: 45%;
+top: 50%;
+transform: scale(0.1);
+}
+
+.x33 {
+
+animation: animateBubble 13s linear infinite, sideWays 2s   infinite alternate;
+left: 9%;
+top: 3%;
+transform: scale(0.1);
+}
+
+.x34 {
+
+animation: animateBubble 14s linear infinite, sideWays 3s   infinite alternate;
+left: 32%;
+top: 31;
+transform: scale(0.1);
+}
+
+.x35 {
+
+animation: animateBubble 18s linear infinite, sideWays 4s   infinite alternate;
+left: 48%;
+top: 4%;
+transform: scale(0.1);
+}
+
+.x36 {
+animation: animateBubble 16s linear infinite, sideWays 2s   infinite alternate;
+left: 28%;
+top: 0;
+transform: scale(0.1);
+}
+
+.x37 {
+
+animation: animateBubble 3s linear infinite, sideWays 2s   infinite alternate;
+left: 35%;
+top: 10%;
+transform: scale(0.1);
+}
+
+.x38 {
+
+animation: animateBubble 4s linear infinite, sideWays 3s   infinite alternate;
+left: 0%;
+top: 15%;
+transform: scale(0.1);
+}
+
+.x39 {
+animation: animateBubble 6s linear infinite, sideWays 4s   infinite alternate;
+left: 75%;
+top: 30%;
+transform: scale(0.1);
+}
+
+.x40 {
+animation: animateBubble 5s linear infinite, sideWays 2s   infinite alternate;
+left: 250%;
+top: 25%;
+transform: scale(0.1);
+}
+
+/* OBJECTS */
+
+.bubble {
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}
+
+/* OBJECTS */
+
+.bubble {
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	
+    height: 200px;
+	position: absolute;
+	width: 200px;
+}
+
+
+      </style>
+</head>
+<body>
+    <div id="background-wrap">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+        <div class="bubble x6"></div>
+        <div class="bubble x7"></div>
+        <div class="bubble x8"></div>
+        <div class="bubble x9"></div>
+        <div class="bubble x10"></div>
+        <div class="bubble x11"></div>
+        <div class="bubble x12"></div>
+        <div class="bubble x13"></div>
+        <div class="bubble x14"></div>
+        <div class="bubble x15"></div>
+        <div class="bubble x16"></div>
+        <div class="bubble x17"></div>
+        <div class="bubble x18"></div>
+        <div class="bubble x19"></div>
+        <div class="bubble x20"></div>
+        <div class="bubble x21"></div>
+        <div class="bubble x22"></div>
+        <div class="bubble x23"></div>
+        <div class="bubble x24"></div>
+        <div class="bubble x25"></div>
+        <div class="bubble x26"></div>
+        <div class="bubble x27"></div>
+        <div class="bubble x28"></div>
+        <div class="bubble x29"></div>
+        <div class="bubble x30"></div>
+        <div class="bubble x31"></div>
+        <div class="bubble x32"></div>
+        <div class="bubble x33"></div>
+        <div class="bubble x34"></div>
+        <div class="bubble x35"></div>
+        <div class="bubble x36"></div>
+        <div class="bubble x37"></div>
+        <div class="bubble x38"></div>
+        <div class="bubble x39"></div>
+        <div class="bubble x40"></div>
+        
+    </div>
+</body>
+</html>

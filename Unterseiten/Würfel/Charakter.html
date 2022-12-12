@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>choose Charakter</title>
+    <link rel="stylesheet" type="text/CSS" href="./Style.css">
+    <script src="./javascript.js" defer></script>
+</head>
+
+<body>
+    <div class="bodyCH-IX" id="charakterDiv">
+        <div id="playersCenter">
+            <div class="players">
+                <div id="PlayerOne"></div>
+                <div id="PlayerTwo"></div>
+            </div>
+        </div>
+        <div id="sizeBigBox">
+            <div id="charaktersInBox">
+                <div class="chooseCharakter">
+                    <img src="./img/Luigi_weak.png" class="hoverText" onclick="chooseLow()">
+                    <div class="textAfterHover">
+                        <p>Lifes: 15<img src="./img/Herz.png"></p>
+                        <div>
+                            <p>Damage: 1 <img src="./img/attack.png"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chooseCharakter">
+                    <img src="./img/Mario_balanced.png" class="hoverText" onclick="chooseBalanced()">
+                    <div class="textAfterHover">
+                        <p>Lifes: 10<img src="./img/Herz.png"></p>
+                        <div>
+                            <p>Damage: 2 <img src="./img/attack.png"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chooseCharakter">
+                    <img src="./img/yoschi_Strong.png" class="hoverText" onclick="chooseHigh()">
+                    <div class="textAfterHover">
+                        <p>Lifes: 5<img src="./img/Herz.png"></p>
+                        <div>
+                            <p>Damage: 3 <img src="./img/attack.png"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sizeBigBox2" style="display:none">
+            <div id="charaktersInBox">
+                <div class="chooseCharakter">
+                    <img src="./img/Luigi_weak.png" class="hoverText" onclick="chooseLow2()">
+                    <div class="textAfterHover">
+                        <p>Lifes: 15<img src="./img/Herz.png"></p>
+                        <div>
+                            <p>Damage: 1 <img src="./img/attack.png"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chooseCharakter">
+                    <img src="./img/Mario_balanced.png" class="hoverText" onclick="chooseBalanced2()">
+                    <div class="textAfterHover">
+                        <p>Lifes: 10<img src="./img/Herz.png"></p>
+                        <div>
+                            <p>Damage: 2 <img src="./img/attack.png"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chooseCharakter">
+                    <img src="./img/yoschi_Strong.png" class="hoverText" onclick="chooseHigh2()">
+                    <div class="textAfterHover">
+                        <p>Lifes: 5<img src="./img/Herz.png"></p>
+                        <div>
+                            <p>Damage: 3 <img src="./img/attack.png"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="BodyFight" style="display:none" class="bodyFight">
+
+        <div id="centerBox">
+            <div id="allIn">
+                <div id="centerHeartOne">
+                    <div id="heartOne"></div>
+                </div>
+                <div>
+                    <div id="buttonsOver">
+                        <button id="newGameButton" onclick="Roll()">Roll Dices</button>
+                    </div>
+                    <div id="centerOutput">
+                        <div id="output"></div>
+                    </div>
+                    
+                </div>
+                <div id="centerHeartTwo">
+                    <div id="heartTwo"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="winner" style="display:none">
+        <div id="placeAll"><div><div id="winnerOutput"></div>
+            <div id="placeCharakter"></div></div>
+        </div></div>
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+@font-face {
+  font-family: 'Supermario';
+  src: url(./font/New\ Super\ Mario\ Font\ U.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bodyCH-IX {
+  background-image: url(./img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center bottom;
+  font-family: Supermario;
+
+}
+
+#text {
+  background-color: #be2801;
+  color: white;
+  font-size: 2.82vh;
+  width: 65vh;
+  height: 35vh;
+  border: 0.5vh black solid;
+  padding: 1vh;
+}
+
+#centerText {
+  display: flex;
+  justify-content: center;
+  height: 63vh;
+  align-items: center;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+  margin-bottom: -1.3vh;
+}
+
+#nav img {
+  width: 100vh;
+}
+
+
+/* CSS */
+#centerButton {
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.button-82-pushable {
+  text-decoration: none;
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 2vh;
+  transition: filter 250ms;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.button-82-front {
+  display: block;
+  position: relative;
+  padding: 2vh;
+  border-radius: 2vh;
+  font-size: 3vh;
+  font-family: supermario;
+  color: white;
+  background: #be2801;
+  will-change: transform;
+  transition:
+    transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-pushable:hover {
+  filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-1vh);
+  transition:
+    transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+#charaktersInBox {
+  display: flex;
+  width: 90vh;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 95vh;
+  padding-top: 7vh;
+}
+
+.chooseCharakter img {
+  width: 15vh;
+  height: 15vh;
+}
+
+#sizeBigBox {
+  display: flex;
+  justify-content: center;
+}
+
+#sizeBigBox2 {
+  display: flex;
+  justify-content: center;
+}
+
+/**text hinter bild hervor**/
+
+
+.textAfterHover {
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  font-size: 2vh;
+  padding: 0.5vh;
+  position: relative;
+  box-shadow: 0px 1px 5px #999;
+  opacity: 0;
+  margin-left: 90vh;
+  margin-top: -60vh;
+
+  margin-right: 70vh;
+  left: 10px;
+  position: absolute;
+  transition: .5s ease;
+
+}
+
+.hoverText:hover+.textAfterHover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.644);
+  visibility: visible;
+}
+
+.players img {
+  width: 50vh;
+
+  margin-top: 5vh;
+}
+
+#playersCenter {
+  height: 0vh;
+
+  margin-left: 2vh;
+  display: flex;
+  align-content: center;
+}
+
+#small {
+  height: auto;
+  width: 6vh;
+}
+
+.ChosenCharacterImg {
+  display: flex;
+}
+
+.ChosenCharacterImg img {
+  width: 50vh;
+}
+
+.ChosenCharacterImg p {
+  opacity: 0;
+  font-size: 2vh;
+}
+
+.bodyFight {
+  background-image: url(./img/fight.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center bottom;
+  font-family: Supermario;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+#BodyFight {
+  width: 100%;
+}
+
+.textAfterHover img {
+  width: 10vh;
+  height: 10vh;
+}
+
+.rainbow-box {
+  background-color: #302244;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+  border-radius: 0.5vh;
+}
+
+.interimText {
+  text-decoration: double underline;
+}
+
+.finalResult {
+  color: green;
+  font-size: 14pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-decoration: double underline;
+}
+
+#newGameButton {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 1vh;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 7vh;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 3vh;
+  padding-right: 3vh;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s, transform .15s;
+  user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 3vh;
+  margin-top: 9vh;
+}
+
+#newGameButton:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+#newGameButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+#newGameButton:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+#buttonsOver {
+  display: flex;
+  width: 120vh;
+  justify-content: center;
+  margin: 5vh;
+  margin-left: 29vh;
+}
+
+#charakterDiv {
+  width: 100%;
+
+}
+
+.healthImg {
+  width: 5vh;
+}
+
+.healthImg2 {
+  width: 5vh;
+}
+
+#boxHearts {
+  display: flex;
+}
+
+#allIn {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+#heartOne {
+  margin-left: -20vh;
+}
+
+#heartTwo {
+  margin-right: -20vh;
+}
+
+#centerHeartOne {
+  display: flex;
+  justify-content: start;
+  height: 100vh;
+  align-items: center;
+}
+
+#centerHeartTwo {
+  display: flex;
+  justify-content: end;
+
+  height: 100vh;
+  align-items: center;
+}
+
+#dices {
+  width: 15vh;
+  margin: 2vh;
+}
+
+#output {
+  display: flex;
+  justify-content: space-between;
+  width: 100vh;
+
+}
+
+#centerOutput {
+  display: flex;
+  margin-left: 25vh;
+  height: 61vh;
+  align-items: center;
+
+}
+
+#winner {
+  background-image: url(./img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center bottom;
+  font-family: Supermario;
+  padding-top: 20vh;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+
+  padding: 0;
+}
+
+.winnerText {
+  width: 70vh;
+  height: 7vh;
+  margin-top: 15vh;
+}
+
+.printCharakters {
+  width: 18vh;
+  height: 18vh;
+}
+
+#playerTwoCharakter {
+  transform: scalex(-1);
+}
+#placeAll{
+  display: flex;
+  align-items: center;
+  height: 82vh;
+}
+#placeCharakter{
+  display: flex;
+  justify-content: center;
+}
+#winnerOutput{
+  margin-bottom: 5vh;
+  margin-top: -6vh;
+}
