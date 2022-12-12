@@ -1,15 +1,10 @@
 *{
     padding: 0;
     margin: 0;
+    background-color: black;
+    color: white;
 }
-#bodyIndex{
-    background-image: url(IMG/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.startImg{
+    width: 5vw;
 }
-<<<<<<< HEAD
-#headLine{
-    background-color: white;
-}
-=======
->>>>>>> 7ad38fee6aa880211b9fbbb581cc74212b014aee
