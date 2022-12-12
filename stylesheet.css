@@ -3,10 +3,13 @@
     margin: 0;
 }
 #bodyIndex{
-    background-image: url(./IMG/background.jpg);
+    background-image: url(IMG/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+<<<<<<< HEAD
 #headLine{
     background-color: white;
 }
+=======
+>>>>>>> 7ad38fee6aa880211b9fbbb581cc74212b014aee
