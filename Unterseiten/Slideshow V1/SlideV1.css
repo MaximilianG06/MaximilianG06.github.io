@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: the escapists;
+    src: url(./VT323-Regular.ttf);
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-family: the escapists;
+    font-size: 10vh;
+    font: bolder;
+    color: white;
+    -webkit-text-stroke: 0.02vh  black;
+    position: absolute;
+
+}
+#centerH1{
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-image: url(./IMG/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#slideshow{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+    transition: 2s;
+}
+
+  .slideshow {
+    position: relative;
+    margin: 1em auto;
+    padding: 0;
+    list-style-type: none;
+    width: 360px;
+    height: 270px;
+    
+  }
+
+.buttons{
+    height: 10vh;
+    background: rgba(128, 128, 128, 0);
+    width: 6vh;
+    font-size: 8vh;
+    border-radius: 7vh;
+}
+#left{
+    background-color: #3526be00;
+    transition: 0.5s;
+}
+#left:hover{
+    background-color: rgba(0, 0, 0, 0.377);
+    color: white;
+}
+#right{
+    background-color: #c30b1400;
+    transition: 0.5s;
+}
+#right:hover{
+    background-color: rgba(0, 0, 0, 0.377);
+    color: white;
+}
+.img{
+    border: 0.4vh solid black;
+    padding: 0;
+    margin: 0;
+    
+}
+#img1{
+    width: 8vw;
+    height: 4vw;
+}
+#img2{
+    width: 14vw;   
+    height: 8vw;
+}
+#img3{
+    width: 22vw;
+    height: 13vw;
+    box-shadow: 0.5vh 0.5vh 3vh;
+}
+#img4{
+    width: 14vw;   
+    height: 8vw; 
+}
+#img5{
+    width: 8vw;
+    height: 4vw;
+}

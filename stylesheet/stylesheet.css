@@ -14,9 +14,10 @@ h1{
 #centerImages{
     display: flex;
     justify-content: center;
-    height: 80vh;
+    height: 90vh;
     align-items: center;
 }
+
 .startImg {
     width: 25vw;
     margin: 3vw;
